@@ -1,0 +1,70 @@
+### macOS
+# Finder metadata
+.DS_Store
+
+# Thumbnails
+._*
+
+# Custom folder icons
+Icon
+
+
+# Volume root files
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+### Windows
+# Windows thumbnail cache files
+Thumbs.db
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows shortcuts
+*.lnk
+
+### Linux
+# Backup files
+*~
+
+# Temporary files from deleted open files
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder
+.Trash-*
+
+# NFS temporary files
+.nfs*
+Progress.md
+
+### Ruby
+# Build artifacts
+*.gem
+*.rbc
+/coverage/
+/pkg/
+/tmp/
+
+# Bundler
+/.bundle/
+/vendor/bundle
+
+# Documentation cache and generated files
+/.yardoc/
+/doc/
+/rdoc/
+
+# Remove Gemfile.lock from gitignore if creating an application, leave it for libraries
+Gemfile.lock
+# .ruby-version
