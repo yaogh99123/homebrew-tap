@@ -28,7 +28,7 @@ fi
 
 echo "==> Checking class name consistency..."
 # 从文件名推导类名 (下划线转大驼峰)
-EXPECTED_CLASS=$(echo "$FORMULA_NAME" | perl -pe 's/(^|_)([a-z])/\u$2/g')
+EXPECTED_CLASS=$(echo "$FORMULA_NAME" | perl -pe 's/(^|[-_])([a-z])/\u$2/g')
 if grep -q "class $EXPECTED_CLASS < Formula" "$FORMULA_PATH"; then
     echo "OK: Class name '$EXPECTED_CLASS' matches formula name."
 else
