@@ -20,6 +20,14 @@ A ultra-fast PHP Language Server written in Rust.
 brew install phpantom_lsp
 ```
 
+### bashd
+
+A specialized bash language server / daemon.
+
+```bash
+brew install bashd
+```
+
 ### Opencode
 
 Open source developer collaboration tool.
@@ -37,6 +45,9 @@ Once installed, you can use the tools directly from your terminal:
 ```bash
 # Verify PHPantom LSP installation
 phpantom_lsp --version
+
+# Verify bashd installation
+bashd --version
 ```
 
 ## Update & Maintenance
