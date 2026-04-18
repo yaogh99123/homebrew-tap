@@ -28,6 +28,14 @@ A specialized bash language server / daemon.
 brew install bashd
 ```
 
+### systemd-lsp
+
+Language Server for systemd unit files.
+
+```bash
+brew install systemd-lsp
+```
+
 ### Opencode
 
 Open source developer collaboration tool.
@@ -48,6 +56,9 @@ phpantom_lsp --version
 
 # Verify bashd installation
 bashd --version
+
+# Verify systemd-lsp installation
+systemd-lsp --version
 ```
 
 ## Update & Maintenance
