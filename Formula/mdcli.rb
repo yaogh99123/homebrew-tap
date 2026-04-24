@@ -5,20 +5,20 @@
 class Mdcli < Formula
   desc "A high-efficiency, minimalist CLI for Markdown preview and management"
   homepage "https://github.com/yaogh99123/homebrew-tap/"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yaogh99123/mdcli/releases/download/v0.1.2/mdcli_0.1.2_darwin_amd64.tar.gz"
-      sha256 "a5d9a317458edcc615799d06508fb6200ac4d621ba50156270f392f8197a0267"
+      url "https://github.com/yaogh99123/mdcli/releases/download/v0.1.3/mdcli_0.1.3_darwin_amd64.tar.gz"
+      sha256 "67b43d47deb12e8563612cfb7fb20b32634a85f8fd5b5591ff5b1ce9fe3c089f"
 
       define_method(:install) do
         bin.install "mdcli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yaogh99123/mdcli/releases/download/v0.1.2/mdcli_0.1.2_darwin_arm64.tar.gz"
-      sha256 "13027a77cd56479239e59c9f41e68b39a08ea99627778778577aebbc614f39a9"
+      url "https://github.com/yaogh99123/mdcli/releases/download/v0.1.3/mdcli_0.1.3_darwin_arm64.tar.gz"
+      sha256 "571f817cce0aaa090a71017d5d2c1925efa9177d7f312e3d81e8a00fd95e6266"
 
       define_method(:install) do
         bin.install "mdcli"
@@ -28,22 +28,22 @@ class Mdcli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yaogh99123/mdcli/releases/download/v0.1.2/mdcli_0.1.2_linux_amd64.tar.gz"
-      sha256 "81c84854af928ee07728479abf9d97457d9319640d510828ae0445d0e28779ee"
+      url "https://github.com/yaogh99123/mdcli/releases/download/v0.1.3/mdcli_0.1.3_linux_amd64.tar.gz"
+      sha256 "d03412dc5a608e329683a05f18287d3f0b5dfd8633e4ee400dff22f6cac0a396"
       define_method(:install) do
         bin.install "mdcli"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/yaogh99123/mdcli/releases/download/v0.1.2/mdcli_0.1.2_linux_armv6.tar.gz"
-      sha256 "b3377efe49df84e6fd1f6259c38b7a5603a650ff9048d02d111aa85025037a3a"
+      url "https://github.com/yaogh99123/mdcli/releases/download/v0.1.3/mdcli_0.1.3_linux_armv6.tar.gz"
+      sha256 "dbf6096061fb19270d7a059f2e8dcf8cb802152c895465dd455cfc266b784325"
       define_method(:install) do
         bin.install "mdcli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yaogh99123/mdcli/releases/download/v0.1.2/mdcli_0.1.2_linux_arm64.tar.gz"
-      sha256 "aa69845551ce9e12b8df84bdf270f0367f30449766b7fbd3815e57fcbed68832"
+      url "https://github.com/yaogh99123/mdcli/releases/download/v0.1.3/mdcli_0.1.3_linux_arm64.tar.gz"
+      sha256 "6f6cffcd982bb286e30a3fcd9bf3b19a9b1b3e37c6d2c2b2106c1ba67312ba3d"
       define_method(:install) do
         bin.install "mdcli"
       end
