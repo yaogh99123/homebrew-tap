@@ -5,20 +5,20 @@
 class Dcli < Formula
   desc "A simple terminal UI for docker, written in Go"
   homepage "https://github.com/yaogh99123/homebrew-tap/"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yaogh99123/dcli/releases/download/v0.1.0/dcli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "a30be28573cabf8f4f77c3f05ca4787923da4251d57513449676fc21b376963e"
+      url "https://github.com/yaogh99123/dcli/releases/download/v0.1.1/dcli_0.1.1_darwin_amd64.tar.gz"
+      sha256 "59b30f55e5aba8d6f950b3d7c54e4f3ba377f48b9a1655d899c8215416fe2afd"
 
       define_method(:install) do
         bin.install "dcli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yaogh99123/dcli/releases/download/v0.1.0/dcli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "b8cbb672dac3ae901e1e3660db2b803a9582aa215b8d0a58216c56ed7dc3b25a"
+      url "https://github.com/yaogh99123/dcli/releases/download/v0.1.1/dcli_0.1.1_darwin_arm64.tar.gz"
+      sha256 "945857235140c7c910923d2cd9aa28d0323a1b6b9bce190715119e70bf1b7e42"
 
       define_method(:install) do
         bin.install "dcli"
@@ -28,22 +28,22 @@ class Dcli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yaogh99123/dcli/releases/download/v0.1.0/dcli_0.1.0_linux_amd64.tar.gz"
-      sha256 "b5b97d1ac602d9e769b3eb12c7e0f5791326cca97d38c6fc95b78cba820b94ae"
+      url "https://github.com/yaogh99123/dcli/releases/download/v0.1.1/dcli_0.1.1_linux_amd64.tar.gz"
+      sha256 "8ce30828b385b2cf3ab5c2a6873d5020fcf61eeffb2952efe016fd28620730db"
       define_method(:install) do
         bin.install "dcli"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/yaogh99123/dcli/releases/download/v0.1.0/dcli_0.1.0_linux_armv6.tar.gz"
-      sha256 "e09859ed999e848f4fd6fe49c78d29b8c537a14e989e1f257faada9c56ad379d"
+      url "https://github.com/yaogh99123/dcli/releases/download/v0.1.1/dcli_0.1.1_linux_armv6.tar.gz"
+      sha256 "cf1a63e773a6814f53b21be56103127ba02f1fafcdac8589da55d2ed530b6700"
       define_method(:install) do
         bin.install "dcli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yaogh99123/dcli/releases/download/v0.1.0/dcli_0.1.0_linux_arm64.tar.gz"
-      sha256 "3b0e54cfe6c5370a412d6072cdf6e8641de7cf4c7dff6eb3df2fcc3b5e803296"
+      url "https://github.com/yaogh99123/dcli/releases/download/v0.1.1/dcli_0.1.1_linux_arm64.tar.gz"
+      sha256 "b36d06cdf5d13dda22a9cda699e4f4e56b985e7c1f06e5ee208236192390feb9"
       define_method(:install) do
         bin.install "dcli"
       end
