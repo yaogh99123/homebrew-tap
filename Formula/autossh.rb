@@ -5,20 +5,20 @@
 class Autossh < Formula
   desc "A simple ssh connection manager, written in Go"
   homepage "https://github.com/yaogh99123/homebrew-tap/"
-  version "1.2.5"
+  version "1.2.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yaogh99123/autossh/releases/download/v1.2.5/autossh_1.2.5_darwin_amd64.tar.gz"
-      sha256 "9bbd92688fd553dd5d46c62ddd17562037760dd7ad7228429c07b06d686b9c77"
+      url "https://github.com/yaogh99123/autossh/releases/download/v1.2.6/autossh_1.2.6_darwin_amd64.tar.gz"
+      sha256 "0db178250e58485359835b2f691cb01902051d362e550da7004da063054edcac"
 
       define_method(:install) do
         bin.install "autossh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yaogh99123/autossh/releases/download/v1.2.5/autossh_1.2.5_darwin_arm64.tar.gz"
-      sha256 "25a3b7c6177a8d7ef4629193b6cc799cd6cfb1282bbc1730be162ddd9d6de2e1"
+      url "https://github.com/yaogh99123/autossh/releases/download/v1.2.6/autossh_1.2.6_darwin_arm64.tar.gz"
+      sha256 "6d9a8079d469f20866300399c720bd02fd2e60054a3c50898650381208c5f477"
 
       define_method(:install) do
         bin.install "autossh"
@@ -28,22 +28,22 @@ class Autossh < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yaogh99123/autossh/releases/download/v1.2.5/autossh_1.2.5_linux_amd64.tar.gz"
-      sha256 "b094a615fcf51ec451f3dfa5b1723de1f35374e698a5fcdf616d25674774a0d1"
+      url "https://github.com/yaogh99123/autossh/releases/download/v1.2.6/autossh_1.2.6_linux_amd64.tar.gz"
+      sha256 "6df6a542a33bda39c9aefdc5e7c82f83d57d038595021e01f333e62a7fce10c6"
       define_method(:install) do
         bin.install "autossh"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/yaogh99123/autossh/releases/download/v1.2.5/autossh_1.2.5_linux_armv6.tar.gz"
-      sha256 "8cb33bccb5b93c7bd383f155368c66f29fa161161efbccd0f5f5c77eaa4e7ee1"
+      url "https://github.com/yaogh99123/autossh/releases/download/v1.2.6/autossh_1.2.6_linux_armv6.tar.gz"
+      sha256 "ae72ebcfd3aaec65f9ef348e2200b617582a4ab2ecca6bda03cb66ae359e380d"
       define_method(:install) do
         bin.install "autossh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yaogh99123/autossh/releases/download/v1.2.5/autossh_1.2.5_linux_arm64.tar.gz"
-      sha256 "94b43934a4e6bdf923bba066c266c4d7710a4440bd839432c6232c3f71960c16"
+      url "https://github.com/yaogh99123/autossh/releases/download/v1.2.6/autossh_1.2.6_linux_arm64.tar.gz"
+      sha256 "751ab4340db098cd8107b18884f3a8f6480d8fb44f681e24d163f1a2ae190cd8"
       define_method(:install) do
         bin.install "autossh"
       end
